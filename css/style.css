@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Exo 2", serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.login-form {
+    width: 100%;
+    max-width: 400px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.bg-img {
+    background-color: rgb(39, 255, 183);
+    padding: 20px;
+}
+
+.bg-img img {
+    width: 200px;
+    height: auto;
+}
+
+.menu-login {
+    padding: 20px;
+}
+.menu-login label{
+    background-color: rgb(185, 185, 185);
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.menu-login input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.menu-login input:focus {
+    outline: none;
+    border-color: rgb(39, 255, 183);
+}
+button {
+    width: 30%;
+    font-weight: bold;
+    margin: 20px 0;
+    float: right;
+    padding: 15px;
+    background-color: rgb(39, 255, 183);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button a{
+    text-decoration: none;
+    color: white;
+}
+
+button:hover {
+    background-color: rgb(36, 221, 159);
+}
+
+button:active {
+    background-color: rgb(29, 177, 127);
+}
+
+@media (max-width: 768px) {
+    .login-form {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .menu-login input {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .bg-img img {
+        width: 80px;
+    }
+
+    .menu-login input {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 6px;
+    }
+}

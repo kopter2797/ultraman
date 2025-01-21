@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Exo 2", serif;
+}
+body{
+    overflow: hidden;
+}
+.navbar{
+    background-color: rgb(39, 255, 183);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 20px 30px;
+}
+.logo-img img{
+    width: 100px;
+    height: auto;
+}
+.menu ul{
+    display: flex;
+    gap: 30px;
+}
+.menu li{
+    list-style-type: none;
+}
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.contariner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vh;
+    max-width: 500px;
+    padding: 20px;   
+    margin-top: 25px;
+}
+.picture img{
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    transition: 0.42s all ease-in-out;
+}
+.picture img:hover{
+    transform: scale(1.2);
+}
+.picture p{
+    font-size: 18px;
+    font-weight: bolder;
+    margin-top: 20px;
+}
+footer{
+    background-color: black;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    margin-top: 25px;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo-img img {
+        width: 100px;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu ul li a {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .picture img {
+        width: 200px;
+    }
+
+    .box p {
+        font-size: 12px;
+    }
+
+    footer {
+        font-size: 10px;
+        text-align: center;
+    }
+}
